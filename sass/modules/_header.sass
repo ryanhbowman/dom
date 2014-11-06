@@ -1,0 +1,50 @@
+.main-header
+  background: $blue
+  height: $header-height
+  width: 100%
+  position: fixed
+  z-index: 4
+  top: 0
+  h3
+    color: white !important
+
+.menu-right
+  @include clearfix
+  position: absolute
+  
+  right: 0
+  li
+    list-style: none
+    float: none
+    background: $blue
+  .menu-item 
+    a
+      cursor: pointer
+      display: block
+      color: white
+      text-align: center
+      padding: .75em 1em
+      @extend %trade
+      text-transform: uppercase
+      // border-left: 1px solid rgba(255,255,255,.2)
+      font-weight: 100
+      height: $header-height
+    &.active, &.active:hover
+      background: $red
+      cursor: default
+      a
+        color: white
+        cursor: default
+    &:hover
+      background: darken($blue,10%)
+      color: white
+
+.logo
+  padding: .65em
+
+@media all and (min-width: $break-medium)
+  .menu-right
+    li
+      float: left
+    a
+      padding: .75em 1.5em

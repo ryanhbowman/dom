@@ -1,0 +1,98 @@
+input[type="text"], input[type="search"], input[type="date"], input[type="password"], input[type="email"]
+
+  box-shadow: none
+  border: 1px solid $med-gray
+  padding: 1em
+  border-radius: 2px
+  @include box-sizing(border-box)
+  background-image: none
+  display: block
+  &.input-fill
+    @include fill-parent
+  &.input-small
+    padding: .75em 1em
+    font-size: .875em
+  &.input-tiny
+    padding: .4em .70em
+  -webkit-appearance: none
+
+.input-fill
+  width: 100%
+\::-webkit-input-placeholder
+  font-weight: 100
+  font-family: helvetica, sans-serif
+\:-moz-placeholder
+  font-weight: 100
+  font-family: helvetica, sans-serif
+\::-moz-placeholder
+  font-weight: 100
+  font-family: helvetica, sans-serif
+\:-ms-input-placeholder
+  font-weight: 100
+  font-family: helvetica, sans-serif
+
+input[type="text"].h3-input
+  @include fill-parent
+  // @extend .gamma
+  border: none
+  padding: 0
+  font-weight: 700
+
+input[type="text"].h4-input
+  @include fill-parent
+  // @extend .delta
+  border: none
+  padding: 0
+  font-weight: 700
+
+.input-push
+  margin-top: 1.5em
+
+.checkbox-label
+  display: block
+  margin-bottom: 1em
+
+select, .select
+  @include appearance(none)
+  padding: 1em
+  border-color: $med-gray
+  color: $med-gray
+  border-radius: 2px
+  background: white url('data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==')
+  background-repeat: no-repeat
+  background-position: 97% center
+  font-weight: 100
+  &.input-small
+    padding: .5em 1em
+    font-size: .875em
+  &:hover
+    background-color: $med-gray
+    color: white
+    cursor: pointer
+  &.full-width
+    width: 100%
+
+.select
+  border: 1px $med-gray solid
+  @include fill-parent
+  color: $med-gray
+
+label, .input-label
+  display: block
+  @extend %trade
+  p
+    font-weight: 100
+    color: $med-gray
+    margin-bottom: .6em !important
+
+.input-group, .editor-group
+  margin-bottom: 1.5em
+  @include clearfix
+  @include outer-container
+  > .input-group, .editor-group
+    margin-bottom: 0
+.input-group
+  p
+    font-weight: 100
+    color: $med-gray
+    margin-bottom: .6em !important

@@ -1,0 +1,57 @@
+.product
+  select
+    width: 100%
+  p
+    margin-bottom: 1em
+  margin-bottom: 1.5em
+  border-bottom: 1px solid $med-gray
+  padding-bottom: 1.5em
+.product-photo
+  display: none
+.product-container
+  margin-bottom: 1em
+
+@media all and (min-width: $break-medium)
+  .product
+    border: 1px solid $med-gray
+    padding: 1em 1em 0 1em
+    @include clearfix
+    max-height: 352px
+    overflow: hidden
+    margin-bottom: 0
+  .product-titling
+    max-height: 125px
+    overflow: hidden
+
+  .product-container
+    margin-bottom: 1.5em
+  .product-photo
+    display: block
+    @include transform(rotate(0deg))
+    min-height: 159px
+    position: relative
+    img
+      @include transition (all .4s ease-in-out)
+      @include transform(rotate(90deg))
+      position: absolute
+      left: 50%
+      margin-left: -80px
+@media all and (min-width: $break-big)
+  .product
+    padding: 1em 0 1em 1em
+    max-height: 252px
+    overflow: hidden
+  .product-info
+    @include span-columns(17 of 30)
+  .product-photo
+ 
+    display: block
+    @include span-columns(13 of 30)
+    img
+      @include transform(rotate(0deg))
+      float: right
+      margin-top: 1em
+      left: 0
+      margin-left: 0
+      position: relative
+

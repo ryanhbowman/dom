@@ -1,0 +1,98 @@
+.modal-open
+  overflow: hidden
+
+.modal
+  // display: none
+  // overflow: auto
+  // overflow-y: scroll
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1050
+  -webkit-overflow-scrolling: touch
+  outline: 0
+  &.fade .modal-dialog
+    -webkit-transform: translate(0, -25%)
+    -ms-transform: translate(0, -25%)
+    transform: translate(0, -25%)
+    -webkit-transition: -webkit-transform 0.3s ease-out
+    -moz-transition: -moz-transform 0.3s ease-out
+    -o-transition: -o-transform 0.3s ease-out
+    transition: transform 0.3s ease-out
+  &.in .modal-dialog
+    -webkit-transform: translate(0, 0)
+    -ms-transform: translate(0, 0)
+    transform: translate(0, 0)
+
+.modal-dialog
+  position: absolute
+  width: auto
+  margin: 10px
+
+.modal-content
+  position: relative
+  background-color: #ffffff
+  border: 1px solid $gray
+  background-clip: padding-box
+  outline: none
+
+.modal-backdrop
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1040
+  background-color: #fff
+  &.fade
+    opacity: 0
+    filter: alpha(opacity = 0)
+  &.in
+    opacity: 0.7
+    filter: alpha(opacity = 70)
+
+.modal-header
+  padding: 1.5em 1.5em 0 1.5em
+  text-align: center
+  position: relative
+  margin-top: -2.1em
+  .close
+    margin-top: -2px
+
+.modal-title
+  margin: 0
+  line-height: 1.42857143
+
+.modal-body
+  position: relative
+  padding: 1.5em
+  @include clearfix
+
+.modal-footer
+  // margin-top: 15px
+  padding: 19px 20px 20px
+  text-align: right
+  background: $light-gray
+  .btn + .btn
+    margin-left: 5px
+    margin-bottom: 0
+  .btn-group .btn + .btn
+    margin-left: -1px
+  .btn-block + .btn-block
+    margin-left: 0
+
+@media (min-width: 768px)
+  .modal-dialog
+    width: 500px
+    margin: 30px auto
+  .modal-sm
+    width: 300px
+  .modal-lg
+    width: 725px
+
+
+@media (min-width: 992px)
+  .modal-lg
+    width: 725px

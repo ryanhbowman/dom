@@ -1,0 +1,41 @@
+$gutter: 1em
+.photo-word-list
+  list-style: none
+  margin: 0
+  padding: 0
+  .photo-word-list-item
+    @include clearfix
+    margin-bottom: 1.15em
+    &:last-of-type
+      margin-bottom: 0
+  .photo-word-list-image
+    @include span-columns(5 16)
+    img
+      width: 100%
+      border: 5px solid $black
+      margin-top: 5px
+  &.no-border
+    .photo-word-list-image
+      img
+        border: none
+  .photo-word-list-headline
+    @include span-columns(10 16)
+    @include shift(1)
+    color: $gray
+    strong
+      color: $black
+  &.icon-word-list
+    .icon-link
+      width: 40px
+      background: $light-gray
+      text-align: center
+      border-radius: 50%
+      height: 40px
+      box-sizing: border-box
+      display: block
+      margin-top: 4px
+      padding-top: 10px
+    .photo-word-list-image
+      @include span-columns(2 16)
+    .photo-word-list-headline
+      @include span-columns(13 16)

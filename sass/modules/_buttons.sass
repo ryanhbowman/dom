@@ -1,0 +1,138 @@
+button, .btn
+  padding: .5em 1em
+  background: white
+  border: 1px $med-gray solid
+  color: $gray
+  border-radius: 2px
+  text-align: center
+  &.active
+    background: $dark-gray
+    color: white
+  &.active:hover
+    background: $dark-gray
+    color: white
+    cursor: default
+  &:disabled
+    background: $light-gray
+    color: $light-gray
+    border-color: $dark-gray
+  &:disabled:active
+    color: $dark-gray
+  &.active:disabled
+    color: $dark-gray
+  &:disabled:hover
+    background: $light-gray
+    color: $dark-gray
+  &:hover
+    background: $dark-gray
+    color: white
+
+.btn-round
+  border-radius: 1.5em
+
+
+.btn-circle
+  font-size: 24px
+  border-radius: 50%
+  height: 1.75em
+  width: 1.75em
+  display: block
+  text-align: center
+  padding: .35em 0
+  float: left
+  margin-right: .5em
+  &:last-of-type
+    margin-right: 0
+
+.btn-small
+  padding: .25em .5em
+  // font-size: .875em
+  min-width: 100px
+  text-transform: uppercase
+.btn-font
+  @extend %trade
+  text-transform: uppercase
+  display: block
+  float: left
+
+.btn-x-small
+  padding: .25em .5em
+  font-size: .875em
+  font-size: 10px
+  text-decoration: none !important
+
+.btn-big
+  padding: 1em 1.25em
+  font-size: 1em
+
+.btn-push
+  margin-top: 1.5em
+
+.btn-simple
+  border: none
+  background: none
+  padding: .25em 1em .25em
+
+
+.btn-full-width
+  width: 100%
+  display: block
+  text-align: center
+
+.btn-center
+  margin-left: auto !important
+  margin-right: auto !important
+  display: block
+  text-align: center
+
+.btn-light
+  background: $med-gray
+  border: none
+  color: white !important
+
+.btn-dark
+  background: $black
+  border: none
+  color: white !important
+
+.btn-outline
+
+.btn-facebook
+  background: #3b5993
+  border: none
+  color: white
+  font-weight: 100
+  &:hover
+    background: darken(#3b5993,10%)
+.btn-twitter
+  background: #55a5e7
+  border: none
+  color: white
+  font-weight: 100
+  &:hover
+    background: darken(#3b5993,10%)
+
+.btn-red
+  background: $red
+  border: none
+  color: white !important
+  font-weight: 100
+  &:hover
+    background: darken($red,10%)
+
+.btn-blue
+  background: $blue
+  border: none
+  color: white
+  font-weight: 100
+  &:hover
+    background: darken($blue,10%)
+
+input[type="submit"].btn
+  @include appearance(none)
+  &:disabled:hover
+    color: $dark-gray !important
+
+.button-group
+  a
+    margin-bottom: .75em

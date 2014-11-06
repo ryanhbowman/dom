@@ -1,0 +1,90 @@
+input[type="radio"]
+  display: none
+.size  .radio
+  margin-right: 1em
+.radio
+  @include clearfix
+  display: inline-block
+
+  label
+    display: inline-block
+    cursor: pointer
+    position: relative
+    width: 100%
+    margin-bottom: 1em
+    padding: 0 0 .5em .5em
+    font-family: helvetica, sans-serif
+    text-transform: none
+    text-align: center
+    font-size: 12px
+    line-height: 18px
+    vertical-align: bottom
+    &:last-of-type
+      margin-bottom: 0
+    &:first-of-type
+      padding-top: .5em
+
+  label:hover
+    // background: $light-gray
+
+  label:before
+    content: '1'
+    @extend %trade
+    display: block
+    color: white
+    width: 2em
+    height: 2em
+    margin: 0 auto .25em
+    position: relative
+    left: 0
+    font-size: 140%
+    background-color: $med-gray
+    // border: 1px solid $gray
+    border-radius: 2px
+    text-align: center
+    padding-top: 8px
+    @include box-sizing(border-box)
+  label.personal-radio:before
+    content: "P"
+    border-radius: 50%
+  label.small-radio:before
+    width: 2.75em
+    height: 2.75em
+    content: 'S'
+    padding-top: 14px
+    border-radius: 50%
+  label.medium-radio:before
+    width: 3.5em
+    height: 3.5em
+    content: 'M'
+    padding-top: 21px
+    border-radius: 50%
+  label.large-radio:before
+    content: 'L'
+    width: 4em
+    height: 4em
+    padding-top: 24px
+    border-radius: 50%
+  label.one:before
+    content: '1'
+  label.two:before
+    content: '2'
+  label.three:before
+    content: '3'
+  label.four:before
+    content: '4'
+  label.five:before
+    content: '5'
+  label.six:before
+    content: '6'
+  label.seven:before
+    content: '7'
+
+
+input[type=radio]:checked + label:before
+  background: $blue
+  border-color: $blue
+
+// input[type=radio]:checked + label
+//   font-weight: 700
+  // background: $light-green

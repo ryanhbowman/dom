@@ -1,0 +1,22 @@
+.box-item
+  background: $light-gray
+  padding: .5em
+  display: block
+  float: left
+  width: 50%
+  text-align: center
+  // margin-bottom: .5em
+  &.active
+    background: $blue
+    color: white
+.box-grid
+  @include clearfix
+
+@media all and (min-width: $break-medium)
+  .box-item
+    float: left
+    padding: .75em 1.5em 
+    width: auto
+    margin-right: 1.5em
+    &:last-of-type
+      margin-right: 0
