@@ -1,0 +1,15 @@
+# Site settings
+title: Domino's Kenya
+email: ryan@circle.co.ke
+description: Domino's Holding
+# baseurl: "/design" # the subpath of your site, e.g. /blog/
+# url: "http://dev.cubitts.co.uk" # the base hostname & protocol for your site
+twitter_username: circlekenya
+github_username:  ryanhbowman
+
+# Build settings
+markdown: kramdown
+
+#Sass stuff
+sass:
+  style: compressed
