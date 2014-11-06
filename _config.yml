@@ -11,5 +11,5 @@ github_username:  ryanhbowman
 markdown: kramdown
 
 #Sass stuff
-sass:
-  style: compressed
+# sass:
+#   style: compressed

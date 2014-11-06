@@ -1,3 +1,36 @@
+.menu.preserve, .menu-sidebar.preserve
+  @include span-columns(12)
+  float: none
+.one.preserve
+  @include span-columns(1)
+.two.preserve
+  @include span-columns(2)
+.three.preserve
+  @include span-columns(3)
+.four.preserve
+  @include span-columns(4)
+.five.preserve
+  @include span-columns(5)
+.six.preserve
+  @include span-columns(5 of 10)
+.seven.preserve
+  @include span-columns(7)
+.eight.preserve
+  @include span-columns(8)
+.nine.preserve
+  @include span-columns(9)
+.ten.preserve
+  @include span-columns(10)
+.eleven.preserve
+  @include span-columns(11)
+.twelve.preserve
+  @include span-columns(12)
+.shift-one.preserve
+  @include shift(1)
+.shift-two.preserve
+  @include shift(2)
+.shift-three.preserve
+  @include shift(3)
 @media all and (min-width: $break-smallish)
   .menu, .menu-sidebar
     @include span-columns(12)
@@ -39,6 +72,8 @@
     @include span-columns(3)
 .columns
   margin-bottom: 1.5em
+.columns.preserve
+  margin-bottom: 0
 .columns > .columns
   margin-bottom: 0
 .row
