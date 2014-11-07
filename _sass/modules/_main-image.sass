@@ -5,18 +5,24 @@
     display: block
     // outline: 2px solid $blue
 .main-image-overlay
-  position: absolute
-  top: 50%
-  height: 6.5em
-  margin-top: -3.25em
-  padding: .5em
+  // position: absolute
+  // bottom: 0
+  // left: 50%
+  // margin-left: -155px
+  text-align: center
+  margin-top: -52px
+  text-align: center
+  z-index: 99999
+  position: relative
+  
+
 .yum-image
   position: absolute
   top: -2.5,em
   right: -2.5em
   display: none
-.home-page.page-padding
-  padding: 0
+// .home-page.page-padding
+//   padding: 0
 
 .order-link
   h1
@@ -45,14 +51,26 @@
 .branch-card-container 
   border: 1px solid $red
   padding: 1em
+.main-image-container
+  max-height: none
+  overflow: visible
+  margin-top: $header-height
 
 @media all and (min-width: $break-medium)
   .main-image-container
-    border: 2px solid white
-    outline: 3px solid $blue
+    // border: 2px solid white
+    // outline: 3px solid $blue
+    img
+      width: 100%
+      top: 50%
+      position: relative
+      margin-top: -200px
+    overflow: hidden
+    max-height: 450px
+
   .main-image
-    border: 1px solid $blue
-    padding: 3px
+    // border: 1px solid $blue
+    // padding: 3px
   .home-page.page-padding
     padding: 2em
   .yum-image
