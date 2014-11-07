@@ -1,3 +1,18 @@
+.menu-link
+  background: $blue
+  color: white
+  width: 100%
+  display: block
+  padding: .5em .5em .25em
+  border: 2px solid $blue
+  outline: 3px solid $blue
+  text-align: center
+  font-family: "TradeGothicW01-BoldCn20 675334", Helvetica, sans-serif
+  font-size: 24px
+  text-transform: uppercase
+  .fa
+    margin-bottom: .5em
+    font-size: 34px
 .main-image-container
   position: relative
   .main-image
@@ -57,6 +72,9 @@
   margin-top: $header-height
 
 @media all and (min-width: $break-medium)
+  .menu-link
+    min-height: 168px
+    padding: 1em
   .main-image-container
     // border: 2px solid white
     // outline: 3px solid $blue
